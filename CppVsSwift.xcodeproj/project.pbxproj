@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4FE10571211391550056CF07 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE10570211391550056CF07 /* main.swift */; };
+		4FE10579211391830056CF07 /* HelloFromCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FE10578211391830056CF07 /* HelloFromCPP.mm */; };
+		4FE1057F211394580056CF07 /* QuickSortCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1057E211394580056CF07 /* QuickSortCpp.mm */; };
+		4FE105832113B05C0056CF07 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FE105812113B05C0056CF07 /* QuickSort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		4FE1056D211391550056CF07 /* CppVsSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppVsSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE10570211391550056CF07 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4FE10577211391830056CF07 /* CppVsSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CppVsSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		4FE10578211391830056CF07 /* HelloFromCPP.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloFromCPP.mm; sourceTree = "<group>"; };
+		4FE1057A211391B30056CF07 /* HelloFromCPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloFromCPP.h; sourceTree = "<group>"; };
+		4FE1057E211394580056CF07 /* QuickSortCpp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = QuickSortCpp.mm; sourceTree = "<group>"; };
+		4FE10580211394680056CF07 /* QuickSortCpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSortCpp.h; sourceTree = "<group>"; };
+		4FE105812113B05C0056CF07 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
+		4FE105822113B05C0056CF07 /* QuickSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QuickSort.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				4FE10570211391550056CF07 /* main.swift */,
+				4FE10578211391830056CF07 /* HelloFromCPP.mm */,
+				4FE10577211391830056CF07 /* CppVsSwift-Bridging-Header.h */,
+				4FE1057A211391B30056CF07 /* HelloFromCPP.h */,
+				4FE1057E211394580056CF07 /* QuickSortCpp.mm */,
+				4FE105812113B05C0056CF07 /* QuickSort.cpp */,
+				4FE105822113B05C0056CF07 /* QuickSort.hpp */,
+				4FE10580211394680056CF07 /* QuickSortCpp.h */,
 			);
 			path = CppVsSwift;
 			sourceTree = "<group>";
@@ -94,6 +111,7 @@
 				TargetAttributes = {
 					4FE1056C211391550056CF07 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -119,7 +137,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE10579211391830056CF07 /* HelloFromCPP.mm in Sources */,
 				4FE10571211391550056CF07 /* main.swift in Sources */,
+				4FE1057F211394580056CF07 /* QuickSortCpp.mm in Sources */,
+				4FE105832113B05C0056CF07 /* QuickSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,9 +263,17 @@
 		4FE10575211391550056CF07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q3J6238RP7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CppVsSwift/CppVsSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -252,9 +281,16 @@
 		4FE10576211391550056CF07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q3J6238RP7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CppVsSwift/CppVsSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
