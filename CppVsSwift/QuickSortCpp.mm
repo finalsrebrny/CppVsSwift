@@ -11,6 +11,7 @@
 #include <iostream>
 #import "QuickSortCpp.h"
 #include "QuickSort.hpp"
+#include <algorithm>
 
 using namespace std;
 
@@ -21,7 +22,8 @@ using namespace std;
         list[i]=[[arrayWithNumbers objectAtIndex:i]integerValue];
         //cout << "number: " << [[arrayWithNumbers[ objectAtIndex:i]]integerValue]<<" xx "<<endl; //cStringUsingEncoding:NSUTF8StringEncoding
     }
-    QuickSort().quicksort(list,0,arrayWithNumbers.count-1);
+    sort(list, list+arrayWithNumbers.count);
+    //QuickSort().quicksort(list,0,arrayWithNumbers.count-1);
     //for (int i=0;i<arrayWithNumbers.count;i++){
         //cout << "number: " << list[i] << endl;
     //}

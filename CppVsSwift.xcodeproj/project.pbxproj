@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FB498D32114D5AC00A073D8 /* AlgorithmApi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FB498D22114D5AC00A073D8 /* AlgorithmApi.mm */; };
+		4FB498DD2114DD3300A073D8 /* Casting.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FB498DC2114DD3300A073D8 /* Casting.mm */; };
+		4FB498E12114E9AD00A073D8 /* SortReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB498E02114E9AD00A073D8 /* SortReport.swift */; };
 		4FE10571211391550056CF07 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE10570211391550056CF07 /* main.swift */; };
 		4FE10579211391830056CF07 /* HelloFromCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FE10578211391830056CF07 /* HelloFromCPP.mm */; };
 		4FE1057F211394580056CF07 /* QuickSortCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1057E211394580056CF07 /* QuickSortCpp.mm */; };
@@ -26,6 +29,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4FB498D22114D5AC00A073D8 /* AlgorithmApi.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AlgorithmApi.mm; sourceTree = "<group>"; };
+		4FB498D42114D5C600A073D8 /* AlgorithmApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgorithmApi.h; sourceTree = "<group>"; };
+		4FB498DC2114DD3300A073D8 /* Casting.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Casting.mm; sourceTree = "<group>"; };
+		4FB498DE2114DD5B00A073D8 /* Casting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Casting.h; sourceTree = "<group>"; };
+		4FB498E02114E9AD00A073D8 /* SortReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortReport.swift; sourceTree = "<group>"; };
 		4FE1056D211391550056CF07 /* CppVsSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppVsSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE10570211391550056CF07 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4FE10577211391830056CF07 /* CppVsSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CppVsSwift-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -48,6 +56,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FB498D02114D4DF00A073D8 /* CppApi */ = {
+			isa = PBXGroup;
+			children = (
+				4FB498D22114D5AC00A073D8 /* AlgorithmApi.mm */,
+				4FB498D42114D5C600A073D8 /* AlgorithmApi.h */,
+				4FB498DC2114DD3300A073D8 /* Casting.mm */,
+				4FB498DE2114DD5B00A073D8 /* Casting.h */,
+			);
+			path = CppApi;
+			sourceTree = "<group>";
+		};
+		4FB498D12114D51A00A073D8 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				4FB498D52114D75E00A073D8 /* Cpp */,
+				4FB498D02114D4DF00A073D8 /* CppApi */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		4FB498D52114D75E00A073D8 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		4FB498DF2114E95900A073D8 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				4FE10570211391550056CF07 /* main.swift */,
+				4FB498E02114E9AD00A073D8 /* SortReport.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		4FE10564211391550056CF07 = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +111,8 @@
 		4FE1056F211391550056CF07 /* CppVsSwift */ = {
 			isa = PBXGroup;
 			children = (
-				4FE10570211391550056CF07 /* main.swift */,
+				4FB498DF2114E95900A073D8 /* Swift */,
+				4FB498D12114D51A00A073D8 /* Cpp */,
 				4FE10578211391830056CF07 /* HelloFromCPP.mm */,
 				4FE10577211391830056CF07 /* CppVsSwift-Bridging-Header.h */,
 				4FE1057A211391B30056CF07 /* HelloFromCPP.h */,
@@ -137,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB498E12114E9AD00A073D8 /* SortReport.swift in Sources */,
+				4FB498DD2114DD3300A073D8 /* Casting.mm in Sources */,
 				4FE10579211391830056CF07 /* HelloFromCPP.mm in Sources */,
 				4FE10571211391550056CF07 /* main.swift in Sources */,
 				4FE1057F211394580056CF07 /* QuickSortCpp.mm in Sources */,
+				4FB498D32114D5AC00A073D8 /* AlgorithmApi.mm in Sources */,
 				4FE105832113B05C0056CF07 /* QuickSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

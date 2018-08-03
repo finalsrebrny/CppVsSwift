@@ -13,8 +13,6 @@
 @interface QuickSortCpp: NSObject
 
 -(void)quickSortCpp:(NSArray *)arrayWithNumbers;
-
--(int)partition2:(NSArray *)arrayWithNumbers;
 @end
 
 #endif /* QuickSortCpp_h */

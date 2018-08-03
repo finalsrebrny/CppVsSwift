@@ -37,9 +37,11 @@ list.sort()
 var end = CACurrentMediaTime()
 print("swift:\(end-start)")
 
+let cpp3 = AlgorithmApi()
+
 var list2 = makeList(1000000)
 var start2 = CACurrentMediaTime()
-cpp2.quickSortCpp(list2)
+cpp3.sortIntegers(list2)
 var end2 = CACurrentMediaTime()
 print("cpp :\(end2-start2)")
 
