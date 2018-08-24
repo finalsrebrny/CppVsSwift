@@ -18,7 +18,7 @@ class SortReport {
         var startValue = 1000
         
         
-        for _ in 0...5 {
+        for _ in 0...1 {
         
         var timeSwift=0.0
         var timeCpp=0.0

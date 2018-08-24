@@ -11,7 +11,7 @@
 #import "Casting.h"
 #include <iostream>
 #include <algorithm>
-
+#import "NetworkingCPR.hpp"
 using namespace std;
 
 
@@ -19,9 +19,12 @@ using namespace std;
 -(void) sortIntegers:(NSArray *)array{
     int * list = [Casting toIntegerArray:array];
     sort(list, list+array.count);
-    //QuickSort().quicksort(list,0,arrayWithNumbers.count-1);
-    //for (int i=0;i<arrayWithNumbers.count;i++){
-    //cout << "number: " << list[i] << endl;
-    //}
+}
+
+-(void) getRequest:(NSString *)url{
+    NetworkingCPR network ;
+    string x = network.download([url UTF8String]);
+    cout << x.size() <<endl;
+
 }
 @end

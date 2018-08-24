@@ -12,6 +12,7 @@
 #import <Foundation/Foundation.h>
 @interface AlgorithmApi: NSObject
 -(void)sortIntegers:(NSArray *)array;
+-(void)getRequest:(NSString *)url;
 @end
 
 #endif /* AlgorithmApi_h */

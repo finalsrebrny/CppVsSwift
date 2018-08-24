@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F22935F21164B2300E7E1B8 /* NetworkingCPR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F22935D21164B2300E7E1B8 /* NetworkingCPR.cpp */; };
+		4F22936D211652D400E7E1B8 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F22936C211652D400E7E1B8 /* libcurl.a */; };
+		4F22936F2116694600E7E1B8 /* NetworkingReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F22936E2116694600E7E1B8 /* NetworkingReport.swift */; };
 		4FB498D32114D5AC00A073D8 /* AlgorithmApi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FB498D22114D5AC00A073D8 /* AlgorithmApi.mm */; };
 		4FB498DD2114DD3300A073D8 /* Casting.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FB498DC2114DD3300A073D8 /* Casting.mm */; };
 		4FB498E12114E9AD00A073D8 /* SortReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB498E02114E9AD00A073D8 /* SortReport.swift */; };
 		4FE10571211391550056CF07 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE10570211391550056CF07 /* main.swift */; };
-		4FE10579211391830056CF07 /* HelloFromCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FE10578211391830056CF07 /* HelloFromCPP.mm */; };
-		4FE1057F211394580056CF07 /* QuickSortCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1057E211394580056CF07 /* QuickSortCpp.mm */; };
-		4FE105832113B05C0056CF07 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FE105812113B05C0056CF07 /* QuickSort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4FE1056B211391550056CF07 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -29,6 +29,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4F22935D21164B2300E7E1B8 /* NetworkingCPR.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkingCPR.cpp; sourceTree = "<group>"; };
+		4F22935E21164B2300E7E1B8 /* NetworkingCPR.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NetworkingCPR.hpp; sourceTree = "<group>"; };
+		4F229363211652D300E7E1B8 /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		4F229364211652D300E7E1B8 /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		4F229365211652D300E7E1B8 /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		4F229366211652D300E7E1B8 /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		4F229367211652D300E7E1B8 /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		4F229368211652D300E7E1B8 /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		4F229369211652D300E7E1B8 /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
+		4F22936A211652D400E7E1B8 /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		4F22936C211652D400E7E1B8 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		4F22936E2116694600E7E1B8 /* NetworkingReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingReport.swift; sourceTree = "<group>"; };
+		4F4F49DD2130949B0026B2CB /* cacert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cacert.pem; sourceTree = "<group>"; };
 		4FB498D22114D5AC00A073D8 /* AlgorithmApi.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AlgorithmApi.mm; sourceTree = "<group>"; };
 		4FB498D42114D5C600A073D8 /* AlgorithmApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgorithmApi.h; sourceTree = "<group>"; };
 		4FB498DC2114DD3300A073D8 /* Casting.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Casting.mm; sourceTree = "<group>"; };
@@ -37,12 +50,6 @@
 		4FE1056D211391550056CF07 /* CppVsSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppVsSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE10570211391550056CF07 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4FE10577211391830056CF07 /* CppVsSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CppVsSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		4FE10578211391830056CF07 /* HelloFromCPP.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloFromCPP.mm; sourceTree = "<group>"; };
-		4FE1057A211391B30056CF07 /* HelloFromCPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloFromCPP.h; sourceTree = "<group>"; };
-		4FE1057E211394580056CF07 /* QuickSortCpp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = QuickSortCpp.mm; sourceTree = "<group>"; };
-		4FE10580211394680056CF07 /* QuickSortCpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSortCpp.h; sourceTree = "<group>"; };
-		4FE105812113B05C0056CF07 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
-		4FE105822113B05C0056CF07 /* QuickSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QuickSort.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +57,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F22936D211652D400E7E1B8 /* libcurl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F229360211652D300E7E1B8 /* libcurl-ios-dist */ = {
+			isa = PBXGroup;
+			children = (
+				4F229361211652D300E7E1B8 /* include */,
+				4F22936B211652D400E7E1B8 /* lib */,
+			);
+			path = "libcurl-ios-dist";
+			sourceTree = "<group>";
+		};
+		4F229361211652D300E7E1B8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4F229362211652D300E7E1B8 /* curl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4F229362211652D300E7E1B8 /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				4F229363211652D300E7E1B8 /* stdcheaders.h */,
+				4F229364211652D300E7E1B8 /* mprintf.h */,
+				4F229365211652D300E7E1B8 /* easy.h */,
+				4F229366211652D300E7E1B8 /* curl.h */,
+				4F229367211652D300E7E1B8 /* curlver.h */,
+				4F229368211652D300E7E1B8 /* system.h */,
+				4F229369211652D300E7E1B8 /* typecheck-gcc.h */,
+				4F22936A211652D400E7E1B8 /* multi.h */,
+			);
+			path = curl;
+			sourceTree = "<group>";
+		};
+		4F22936B211652D400E7E1B8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4F22936C211652D400E7E1B8 /* libcurl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		4FB498D02114D4DF00A073D8 /* CppApi */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +118,7 @@
 		4FB498D12114D51A00A073D8 /* Cpp */ = {
 			isa = PBXGroup;
 			children = (
+				4F229360211652D300E7E1B8 /* libcurl-ios-dist */,
 				4FB498D52114D75E00A073D8 /* Cpp */,
 				4FB498D02114D4DF00A073D8 /* CppApi */,
 			);
@@ -79,6 +128,9 @@
 		4FB498D52114D75E00A073D8 /* Cpp */ = {
 			isa = PBXGroup;
 			children = (
+				4F4F49DD2130949B0026B2CB /* cacert.pem */,
+				4F22935D21164B2300E7E1B8 /* NetworkingCPR.cpp */,
+				4F22935E21164B2300E7E1B8 /* NetworkingCPR.hpp */,
 			);
 			path = Cpp;
 			sourceTree = "<group>";
@@ -88,6 +140,7 @@
 			children = (
 				4FE10570211391550056CF07 /* main.swift */,
 				4FB498E02114E9AD00A073D8 /* SortReport.swift */,
+				4F22936E2116694600E7E1B8 /* NetworkingReport.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -113,13 +166,7 @@
 			children = (
 				4FB498DF2114E95900A073D8 /* Swift */,
 				4FB498D12114D51A00A073D8 /* Cpp */,
-				4FE10578211391830056CF07 /* HelloFromCPP.mm */,
 				4FE10577211391830056CF07 /* CppVsSwift-Bridging-Header.h */,
-				4FE1057A211391B30056CF07 /* HelloFromCPP.h */,
-				4FE1057E211394580056CF07 /* QuickSortCpp.mm */,
-				4FE105812113B05C0056CF07 /* QuickSort.cpp */,
-				4FE105822113B05C0056CF07 /* QuickSort.hpp */,
-				4FE10580211394680056CF07 /* QuickSortCpp.h */,
 			);
 			path = CppVsSwift;
 			sourceTree = "<group>";
@@ -184,11 +231,10 @@
 			files = (
 				4FB498E12114E9AD00A073D8 /* SortReport.swift in Sources */,
 				4FB498DD2114DD3300A073D8 /* Casting.mm in Sources */,
-				4FE10579211391830056CF07 /* HelloFromCPP.mm in Sources */,
 				4FE10571211391550056CF07 /* main.swift in Sources */,
-				4FE1057F211394580056CF07 /* QuickSortCpp.mm in Sources */,
+				4F22936F2116694600E7E1B8 /* NetworkingReport.swift in Sources */,
 				4FB498D32114D5AC00A073D8 /* AlgorithmApi.mm in Sources */,
-				4FE105832113B05C0056CF07 /* QuickSort.cpp in Sources */,
+				4F22935F21164B2300E7E1B8 /* NetworkingCPR.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +365,12 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CppVsSwift/Cpp/libcurl-ios-dist/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "/Users/piotrholub/Documents/Wewnętrze";
 				SWIFT_OBJC_BRIDGING_HEADER = "CppVsSwift/CppVsSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -337,7 +388,12 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CppVsSwift/Cpp/libcurl-ios-dist/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "/Users/piotrholub/Documents/Wewnętrze";
 				SWIFT_OBJC_BRIDGING_HEADER = "CppVsSwift/CppVsSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
